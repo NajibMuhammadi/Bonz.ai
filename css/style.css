@@ -202,6 +202,10 @@ body::-webkit-scrollbar-thumb {
     color: black;
 }
 
+.form__input[type=date] {
+    color: black;
+}
+
 .booking__search {
     margin: 1.4rem 0 0 0;
 }
