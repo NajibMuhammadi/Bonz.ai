@@ -107,7 +107,7 @@ body::-webkit-scrollbar-thumb {
 
 .main__background-image {
     height: 650px;
-    background-image: url("/assets/photos/01-day.jpg");
+    background-image: url("/photos/01-day.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
