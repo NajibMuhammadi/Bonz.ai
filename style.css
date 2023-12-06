@@ -1,0 +1,826 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(#ff22e6, #642bff);
+    border-radius: 4px;
+}
+
+.wrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+    background: #f3f5f8;
+}
+
+
+
+
+
+/* HEADER */
+.header {
+    max-width: 1366px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1.5rem;
+    border-bottom: 1px solid black;
+    z-index: 99;
+}
+
+.header__logo-link {
+    display: flex;
+    width: 130px;
+    align-items: center;
+}
+
+.header__logo-img {
+    width: 100%;
+}
+
+.header__toggle,
+.header__toggle-label {
+    display: none;
+}
+
+.header__menu-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.header__menu-link {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.header__menu-link::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    border-bottom: 4px solid red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 400ms ease-in-out;
+    display: inline-block;
+}
+
+.header__menu-link:hover::before {
+    width: 100%;
+}
+
+.header__menu-link:hover {
+    color: rgb(165, 152, 152);
+    transition: 600ms ease-in-out;
+    text-decoration: none;
+}
+
+
+
+
+/* MAIN */
+
+.main__background-image {
+    height: 650px;
+    background-image: url("/assets/photos/01-day.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10%;
+}
+
+
+
+
+/* WELCOME TO OUR HOTEL */
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 50%;
+    color: white;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 15px;
+    height: 350px;
+    padding-top: 50px;
+}
+
+.main__container-title {
+    text-transform: uppercase;
+    color: darkcyan;
+    font-size: 2rem;
+}
+
+.main__container-text {
+    line-height: 17px;
+    font-size: 0.9rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -8rem;
+}
+
+.main__container-star {
+    color: gold;
+    align-self: flex-end;
+    padding: 0 1rem 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.main__container-star--span-white {
+    color: white;
+}
+
+
+
+
+/* SEARCH_INPUT */
+
+.booking__main {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: -4rem;
+    height: 167px;
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(4rem);
+    box-shadow: 3px 3px 15px black;
+}
+
+.booking__input-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: .5rem;
+    height: 0;
+}
+
+.form__label {
+    color: black;
+}
+
+.form__input,
+.search__input {
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px black;
+}
+
+.form__input::placeholder {
+    color: black;
+}
+
+.booking__search {
+    margin: 1.4rem 0 0 0;
+}
+
+.search__input {
+    border-radius: 15px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+
+
+
+/* About__us */
+
+.about__us {
+    width: 80%;
+    margin: 1rem auto 0;
+
+}
+
+.about__us-title {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.about__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+}
+
+.about__picture-img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.about__info {
+    padding: 1rem 0;
+}
+
+.about__info-subtitle {
+    font-size: clamp(1.0625rem, 0.4409rem + 1.6548vw, 1.5rem);
+    margin-bottom: 1rem;
+}
+
+.about__info-text {
+    font-size: clamp(0.75rem, 0.5724rem + 0.4728vw, 0.875rem);
+    line-height: 1.66667;
+    font-weight: 300;
+    color: rgba(21, 21, 21, 0.8);
+    letter-spacing: -0.03em
+}
+
+
+
+
+/* OUR ROOMS */
+.explore__container {
+    background-color: snow;
+}
+
+.explore__container-title {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
+.explore__grid-split {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.room__grid {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500px;
+    grid-column: 1/6;
+}
+
+.room__grid::-webkit-scrollbar {
+    width: 4px;
+}
+
+.room__grid::-webkit-scrollbar-thumb {
+    background: linear-gradient(#642bff, #ff22e6);
+    border-radius: 4px;
+}
+
+.room__main,
+.booking__page__room__main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem 1rem 0 2rem;
+    border-bottom: 1.5px solid grey;
+    padding-bottom: .3rem;
+}
+
+.room {
+    height: 162px;
+    width: 246px;
+}
+
+.room__img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.room__info,
+.room__price {
+    padding-left: 1rem;
+}
+
+.room__info-title,
+.booking__page-title,
+.guest__contact-title {
+    font-weight: 500;
+    font-size: clamp(1.0625rem, 0.4409rem + 1.6548vw, 1.5rem);
+    line-height: 32px;
+}
+
+.room__info-link {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    padding-bottom: .8rem;
+}
+
+.room__info-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+}
+
+.room__info-subtitle {
+    font-weight: 700;
+    font-size: clamp(0.75rem, 0.5724rem + 0.4728vw, 0.875rem);
+    line-height: 20px;
+}
+
+.room__info-text,
+.room__price-text {
+    font-size: clamp(0.75rem, 0.5724rem + 0.4728vw, 0.875rem);
+    color: #000;
+    font-weight: 500;
+}
+
+.room__price {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.room__price-text {
+    font-weight: 700;
+}
+
+.room__price-text--span {
+    font-size: clamp(1.5rem, 0.7896rem + 1.8913vw, 2rem);
+}
+
+.booking__room-btn {
+    background: #f9d9d8;
+    border-style: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: clamp(0.8rem, 0.5158rem + 0.7565vw, 1rem);
+    width: 100%;
+}
+
+.booking__room-btn--link {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* GOOGLE MAPS */
+.map__section {
+    grid-column: 6/9;
+    padding: 1rem 2rem 1rem 0;
+}
+
+.map__section-iframe {
+    width: 100%;
+    outline: 2px solid red;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+
+}
+
+.footer__container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 0;
+}
+
+.footer__about-title,
+.footer__contact-title,
+.footer__socialmedia-title,
+.footer__form-title {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+
+.footer__form-title {
+    font-size: 1.2rem;
+}
+
+.footer__about-text,
+.footer__contact-text,
+.footer__socialmedia-text {
+    line-height: 150%;
+    color: #fff;
+}
+
+/* Booking Page + choosen hotel */
+.booking__page__main__background__image {
+    height: auto;
+    padding: 62px 0 0;
+}
+
+.booking__page {
+    width: 100%;
+    backdrop-filter: blur(4rem);
+    box-shadow: 3px 3px 15px black;
+    padding: 2rem;
+    color: snow;
+}
+
+.booking__page__room__main {
+    margin: 1rem 1rem 2rem;
+}
+
+.booking__page__room {
+    width: auto;
+    height: auto;
+}
+
+.booking__page__room__info,
+.booking__page__room__price {
+    padding-top: 1rem;
+}
+
+.room__info-text--white-color,
+.room__price-text--white-color,
+.room__info-subtitle--white-color {
+    color: snow;
+    font-weight: 100;
+}
+
+/* Guest information */
+.guest__contact {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.guest__contact-title {
+    padding-bottom: 1rem;
+}
+
+.phone__number,
+.guest__name,
+.email__form {
+    padding-bottom: 1rem;
+}
+
+.phone__number-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.phone__number__country-select {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: .5rem;
+    background-color: whitesmoke;
+}
+
+
+.phone__number-input,
+.guest__name-input,
+.email__input {
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+
+.phone__number-input {
+    grid-column: 2/4;
+}
+
+.guest__name__label-grid,
+.guest__name__input-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+}
+
+.guest__name-input,
+.email__input {
+    width: 100%;
+}
+
+.guest__contact-submit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.submit__input {
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #f9d9d8;
+    color: black;
+    width: 50%;
+    font-size: clamp(0.8rem, 0.5158rem + 0.7565vw, 1rem);
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .header {
+        padding: 1rem;
+        background-color: black;
+    }
+
+    .header__toggle-label {
+        display: inline-flex;
+        color: white;
+        cursor: pointer;
+    }
+
+    .header__toggle:checked~.nav__menu {
+        height: 100%;
+        color: black;
+    }
+
+    .nav__menu {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .header__menu-list {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1.3rem;
+    }
+
+    .main__background-image {
+        padding-top: 6rem;
+    }
+
+    .main__container {
+        width: 80%;
+        height: 340px;
+    }
+
+    .booking__main {
+        width: 90%;
+        height: 270px;
+        padding: 1rem;
+        margin-top: -10rem;
+    }
+
+    .booking__input-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .booking__form__check-in,
+    .booking__form__adults {
+        grid-column: 1/3;
+    }
+
+    .booking__form__check-out,
+    .booking__form__children {
+        grid-column: 3/5;
+    }
+
+    .booking__search {
+        grid-column: 4;
+        margin: 0;
+    }
+
+    .about__grid {
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+
+    .room {
+        height: auto;
+        width: auto;
+    }
+
+    .about__info {
+        padding-bottom: 0;
+    }
+
+    .about__info-subtitle {
+        margin-bottom: .4rem;
+    }
+
+    .explore__grid-split {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .room__grid {
+        overflow-y: hidden;
+        height: auto;
+    }
+
+    .map__section {
+        display: none;
+    }
+
+    .booking__page__main__background__image {
+        padding-top: 62px;
+    }
+
+    .booking__page__room__main {
+        margin: 1rem 0rem 1.5rem;
+    }
+
+    .guest__contact {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        padding: 1rem;
+        background-color: black;
+    }
+
+    .header__toggle-label {
+        display: inline-flex;
+        color: white;
+        cursor: pointer;
+    }
+
+    .header__toggle:checked~.nav__menu {
+        height: 100%;
+        color: black;
+    }
+
+    .nav__menu {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .header__menu-list {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1.3rem;
+    }
+
+    .header__menu-item:nth-child(4) {
+        display: none;
+    }
+
+    .main__background-image {
+        padding-top: 6rem;
+
+    }
+
+    .main__container {
+        width: 90%;
+        height: 320px;
+    }
+
+    .main__container-text {
+        margin-top: 0;
+    }
+
+    .booking__main {
+        width: 96%;
+        height: 430px;
+        padding: 1rem;
+        margin-top: -12rem;
+    }
+
+    .booking__input-grid {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: .5rem;
+    }
+
+    .common__form {
+        grid-column: 1/5;
+    }
+
+    .booking__search {
+        grid-column: 4;
+        margin: 0;
+    }
+
+    .search__input {
+        margin-top: .5rem;
+    }
+
+    .about__us {
+        width: 90%;
+    }
+
+    .about__grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .about__info {
+        padding: 0;
+    }
+
+    .about__info-subtitle {
+        margin-bottom: .5rem;
+    }
+
+    .explore__container-title {
+        padding: 1rem 0 0 0;
+    }
+
+    .explore__grid-split {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .room__grid {
+        overflow-y: hidden;
+        height: auto;
+    }
+
+    .room__main {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 1rem 1rem 1.5rem;
+    }
+
+    .room {
+        height: auto;
+        width: auto;
+        grid-column: 1/3;
+    }
+
+    .room__info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 0 0.8rem 0;
+    }
+
+    .room__info-link {
+        text-decoration: underline;
+        padding-bottom: 0;
+    }
+
+    .room__info-link::after {
+        display: none;
+    }
+
+    .room__price {
+        grid-column: 1/3;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .booking__room {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .map__section {
+        display: none;
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        row-gap: 1rem;
+    }
+
+    .booking__page__main__background__image {
+        padding-top: 40px;
+    }
+
+    .booking__page__room__main {
+        margin: 1rem 0rem 1.5rem;
+    }
+
+    .guest__contact {
+        width: 100%;
+    }
+
+}

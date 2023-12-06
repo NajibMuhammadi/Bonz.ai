@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="/home/index.html" class="header__logo-link">
+                <img class="header__logo-img" src="/assets/logo/bonz.ai-logo-white-landscape.png"
+                    alt="bonz.ai logo white">
+            </a>
+            <input type="checkbox" name="" id="toggle" class="header__toggle">
+            <label for="toggle" class="header__toggle-label"><i class="material-icons">menu</i></label>
+            <nav class="nav__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item"><a href="/home/index.html#main" class="header__menu-link">Home</a>
+                    </li>
+                    <li class="header__menu-item"><a href="/home/index.html#booking__main"
+                            class="header__menu-link">About</a></li>
+                    <li class="header__menu-item"><a href="/home/index.html#about__grid" class="header__menu-link">Our
+                            Rooms</a>
+                    </li>
+                    <li class="header__menu-item"><a href="/home/index.html#map__section-iframe"
+                            class="header__menu-link">address</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main" id="booking__page-main">
+            <section class="main__background-image booking__page__main__background__image">
+                <article class="booking__page">
+                    <h4 class="booking__page-title">Booking overview</h4>
+                    <article class="room__main booking__page__room__main">
+                        <section class="room booking__page__room">
+                            <img class="room__img" src="/assets/photos/08-night.jpg" alt="Inside the hotel at night">
+                        </section>
+                        <section class="room__info booking__page__room__info">
+                            <h4 class="room__info-title">Clarion Hotel® Sign</h4>
+                            <h6 class="room__info-subtitle room__info-subtitle--white-color">Stockholm, Sweden</h6>
+                            <p class="room__info-text room__info-text--white-color">Inom 100 m från Stockholm centrum
+                            </p>
+                        </section>
+                        <section class="room__price booking__page__room__price">
+                            <p class="room__price-text room__price-text--white-color">Average price per night:
+                                <br><span class="room__price-text--span">SEK 2 333</span>
+                            </p>
+                        </section>
+                    </article>
+                    <article class="guest__contact">
+                        <h4 class="guest__contact-title">The guest's contact details</h4>
+                        <section class="phone__number">
+                            <label class="phone__number-label">Telefonnumber</label>
+                            <article class="phone__number-grid">
+                                <select class="phone__number__country-select">
+                                    <option class="country-option" value=" SE">Sverige</option>
+                                    <option class="country-option" value="SE">Norge</option>
+                                    <option class="country-option" value="SE">Danmark</option>
+                                    <option class="country-option" value="SE">Sverige</option>
+                                </select>
+                                <input class="phone__number-input" type="number" placeholder="+46" required>
+                            </article>
+                        </section>
+                        <section class="guest__name">
+                            <article class="guest__name__label-grid">
+                                <label class="guest__name-label" for="firstName">First Name*</label>
+                                <label class="guest__name-label" for="lastName">last Name*</label>
+                            </article>
+                            <article class="guest__name__input-grid">
+                                <input class="guest__name-input" type="text" required>
+                                <input class="guest__name-input" type="text" required>
+                            </article>
+                        </section>
+                        <section class="email__form">
+                            <label class="email__form-label" for="email">E-post*</label>
+                            <article class="email__input-container">
+                                <input class="email__input" type="email" id="email" required>
+                            </article>
+                        </section>
+                        <section class="guest__contact-submit" id="guest__contact-submit">
+                            <input class="submit__input" type="submit" value="bekräfta booking" onclick="showAlert()">
+                        </section>
+                    </article>
+                </article>
+            </section>
+        </main>
+        <footer class=" footer">
+            <section class="footer__container">
+                <article class="footer__about__us">
+                    <h2 class="footer__about-title">About us</h2>
+                    <p class="footer__about-text">Products</p>
+                    <p class="footer__about-text">About us</p>
+                    <p class="footer__about-text">Contact us</p>
+                </article>
+                <article class="footer__contact__us">
+                    <h2 class="footer__contact-title">Address</h2>
+                    <p class="footer__contact-text">Gatunamn</p>
+                    <p class="footer__contact-text">123 45 Staden</p>
+                </article>
+                <article class="footer__socialmedia">
+                    <h2 class="footer__socialmedia-title">Social Media</h2>
+                    <p class="footer__socialmedia-text">instagram</p>
+                    <p class="footer__socialmedia-text">facebook</p>
+                    <p class="footer__socialmedia-text">twitter</p>
+                </article>
+            </section>
+        </footer>
+    </div>
+    <script src="/java/script.js"></script>
+</body>
+
+</html>
