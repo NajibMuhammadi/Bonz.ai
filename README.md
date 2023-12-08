@@ -1,5 +1,5 @@
 # Bonz.ai
-Tryck på länken nedan för att besöka vår fantastiska hemsida:
+Tryck på länken nedan för att besöka min hemsida:
 
 [https://najibmuhammadi.github.io/Bonz.ai/start/index.html#main](https://najibmuhammadi.github.io/Bonz.ai/start/index.html#main)
 
