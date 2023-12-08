@@ -436,7 +436,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Booking Page + choosen hotel */
-.booking__page__main__background__image {
+.booking__page__main__background-image {
     height: auto;
     padding: 62px 0 0;
 }
@@ -647,7 +647,7 @@ body::-webkit-scrollbar-thumb {
         display: none;
     }
 
-    .booking__page__main__background__image {
+    .booking__page__main__background-image {
         padding-top: 62px;
     }
 
@@ -807,7 +807,7 @@ body::-webkit-scrollbar-thumb {
         row-gap: 1rem;
     }
 
-    .booking__page__main__background__image {
+    .booking__page__main__background-image {
         padding-top: 40px;
     }
 
