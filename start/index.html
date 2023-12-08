@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonz.ai</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- HEADER -->
+        <header class="header">
+            <article class="header__logo">
+                <a href="#main" class="header__logo-link">
+                    <img class="header__logo-img" src="../logo/bonz.ai-logo-white-landscape.png"
+                        alt="bonz.ai logo white">
+                </a>
+            </article>
+            <input type="checkbox" name="" id="toggle" class="header__switch">
+            <label for="toggle" class="header__label"><i class="material-icons">menu</i></label>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#main" class="header__nav-link">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#main__book" class="header__nav-link">About</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#about__grid" class="header__nav-link">Our Rooms</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#map__iframe" class="header__nav-link">Address</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main" id="main">
+            <section class="main__hero">
+                <article class="hero">
+                    <h1 class="hero__title">Welcome to our hotel</h1>
+                    <p class="hero__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
+                        iusto accusantium aperiam voluptate
+                        minima odit, necessitatibus illum beatae quod explicabo nisi repellat, debitis doloremque dicta
+                        modi
+                        assumenda nulla. Ea, velit?</p>
+                    <p class="hero__star">
+                        &#9733;&#9733;&#9733;&#9733;<span class="hero__star-extra">&#9733;</span>
+                    </p>
+                </article>
+            </section>
+            <article class="main__book" id="main__book">
+                <section class="book__container-grid">
+                    <article class="book__item book__item--checkin">
+                        <label class="book__item-label">Check-in:</label>
+                        <input class="book__item-input" type="date" placeholder="Check-in-Date">
+                    </article>
+                    <article class="book__item book__item--checkout">
+                        <label class="book__item-label">Check-out:</label>
+                        <input class="book__item-input" type="date" placeholder="Check-out-Date">
+                    </article>
+                    <article class="book__item book__item--adults">
+                        <label class="book__item-label">Adults:</label>
+                        <input class="book__item-input" type="number" placeholder="0">
+                    </article>
+                    <article class="book__item book__item--children">
+                        <label class="book__item-label">Children:</label>
+                        <input class="book__item-input" type="number" placeholder="0">
+                    </article>
+                    <article class="book__search book__search--end" id="book__search">
+                        <input class="book__search-input" type="submit" value="SEARCH" id="searchButton">
+                    </article>
+                </section>
+            </article>
+            <section class="main__about">
+                <h2 class="about__title">About us</h2>
+                <article class="about__grid" id="about__grid">
+                    <section class="about__picture">
+                        <img class="about__picture-img" src="../photos/03-day.jpg" alt="sunset view sitting in hotel">
+                    </section>
+                    <section class="about__info">
+                        <h2 class="about__info-title">Welcome to Bonz.ai</h2>
+                        <p class="about__info-text">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Tempora
+                            labore ipsa in nemo, numquam
+                            sed
+                            quibusdam. Nostrum asperiores numquam nemo aspernatur assumenda vero iusto, accusantium
+                            quos
+                            iste itaque, placeat at.</p>
+                    </section>
+                </article>
+            </section>
+            <section class="main__explore">
+                <h2 class="main__explore-title">Our Rooms</h2>
+                <article class="explore__grid">
+                    <section class="room__grid">
+                        <article class="room__main">
+                            <section class="room__image">
+                                <img class="room__image-img" src="../photos/08-night.jpg"
+                                    alt="Inside the hotel at night">
+                            </section>
+                            <section class="room__info">
+                                <h4 class="room__info-title">Clarion Hotel® Sign</h4>
+                                <a class="room__info-link" href="#">Om hotellet</a>
+                                <h6 class="room__info-subtitle">Stockholm, Sweden</h6>
+                                <p class="room__info-text">Inom 100 m från Stockholm centrum</p>
+                            </section>
+                            <section class="room__price">
+                                <p class="room__price-text">Snittpris per natt:
+                                    <br><span class="room__price-currency">SEK 2 333</span>
+                                </p>
+                                <article class="room__book">
+                                    <button class="room__book-btn">
+                                        <a href="../booking/index.html#booking__page-main" class="room__book-link">Book
+                                            Room</a>
+                                    </button>
+                                </article>
+                            </section>
+                        </article>
+                        <article class="room__main">
+                            <section class="room__image">
+                                <img class="room__image-img" src="../photos/09-night.jpg"
+                                    alt="Outside the hotel at night">
+                            </section>
+                            <section class="room__info">
+                                <h4 class="room__info-title">Clarion Hotel® Sign</h4>
+                                <a class="room__info-link" href="#">Om hotellet</a>
+                                <h6 class="room__info-subtitle">Stockholm, Sweden</h6>
+                                <p class="room__info-text">Inom 100 m från Stockholm centrum</p>
+                            </section>
+                            <section class="room__price">
+                                <p class="room__price-text">Snittpris per natt:
+                                    <br><span class="room__price-currency">SEK 2 333</span>
+                                </p>
+                                <article class="room__book">
+                                    <button class="room__book-btn">
+                                        <a href="../booking/index.html#booking__page-main" class="room__book-link">Book
+                                            Room</a>
+                                    </button>
+                                </article>
+                            </section>
+                        </article>
+                        <article class="room__main">
+                            <section class="room__image">
+                                <img class="room__image-img" src="../photos/06-day.jpg" alt="The hall">
+                            </section>
+                            <section class="room__info">
+                                <h4 class="room__info-title">Clarion Hotel® Sign</h4>
+                                <a class="room__info-link" href="#">Om hotellet</a>
+                                <h6 class="room__info-subtitle">Stockholm, Sweden</h6>
+                                <p class="room__info-text">Inom 100 m från Stockholm centrum</p>
+                            </section>
+                            <section class="room__price">
+                                <p class="room__price-text">Snittpris per natt:
+                                    <br><span class="room__price-currency">SEK 2 333</span>
+                                </p>
+                                <article class="room__book">
+                                    <button class="room__book-btn">
+                                        <a href="../booking/index.html#booking__page-main" class="room__book-link">Book
+                                            Room</a>
+                                    </button>
+                                </article>
+                            </section>
+                        </article>
+                        <article class="room__main">
+                            <section class="room__image">
+                                <img class="room__image-img" src="../photos/05-night.jpg"
+                                    alt="The living room at night">
+                            </section>
+                            <section class="room__info">
+                                <h4 class="room__info-title">Clarion Hotel® Sign</h4>
+                                <a class="room__info-link" href="#">Om hotellet</a>
+                                <h6 class="room__info-subtitle">Stockholm, Sweden</h6>
+                                <p class="room__info-text">Inom 100 m från Stockholm centrum</p>
+                            </section>
+                            <section class="room__price">
+                                <p class="room__price-text">Snittpris per natt:
+                                    <br><span class="room__price-currency">SEK 2 333</span>
+                                </p>
+                                <article class="room__book">
+                                    <button class="room__book-btn">
+                                        <a href="../booking/index.html#booking__page-main" class="room__book-link">Book
+                                            Room</a>
+                                    </button>
+                                </article>
+                            </section>
+                        </article>
+                        <article class="room__main">
+                            <section class="room__image">
+                                <img class="room__image-img" src="../photos/04-night.jpg" alt="Bed">
+                            </section>
+                            <section class="room__info">
+                                <h4 class="room__info-title">Clarion Hotel® Sign</h4>
+                                <a class="room__info-link" href="#">Om hotellet</a>
+                                <h6 class="room__info-subtitle">Stockholm, Sweden</h6>
+                                <p class="room__info-text">Inom 100 m från Stockholm centrum</p>
+                            </section>
+                            <section class="room__price">
+                                <p class="room__price-text">Snittpris per natt:
+                                    <br><span class="room__price-currency">SEK 2 333</span>
+                                </p>
+                                <article class="room__book">
+                                    <button class="room__book-btn">
+                                        <a href="../booking/index.html#booking__page-main" class="room__book-link">Book
+                                            Room</a>
+                                    </button>
+                                </article>
+                            </section>
+                        </article>
+                    </section>
+                    <section class="map">
+                        <iframe class="map__iframe" id="map__iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2032.2139752210542!2d13.495487176445664!3d59.37945650700808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb3d143fd580d%3A0xfb3d714d4836b83d!2sFolkuniversitetet%20Karlstad!5e0!3m2!1sen!2sse!4v1701470172247!5m2!1sen!2sse"
+                            height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="footer__container">
+                <article class="footer__about">
+                    <h2 class="footer__about-title">About us</h2>
+                    <p class="footer__about-text">Products</p>
+                    <p class="footer__about-text">About us</p>
+                    <p class="footer__about-text">Contact us</p>
+                </article>
+                <article class="footer__contact">
+                    <h2 class="footer__contact-title">Address</h2>
+                    <p class="footer__contact-text">Gatunamn</p>
+                    <p class="footer__contact-text">123 45 Staden</p>
+                </article>
+                <article class="footer__socialmedia">
+                    <h2 class="footer__socialmedia-title">Social Media</h2>
+                    <p class="footer__socialmedia-text">instagram</p>
+                    <p class="footer__socialmedia-text">facebook</p>
+                    <p class="footer__socialmedia-text">twitter</p>
+                </article>
+            </section>
+        </footer>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+
+</html>
