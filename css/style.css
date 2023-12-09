@@ -244,7 +244,8 @@ body::-webkit-scrollbar-thumb {
     border-radius: 16px;
 }
 
-.about__info {
+.about__info,
+.hotel__description {
     padding: 1rem 0;
 }
 
@@ -253,7 +254,8 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 1rem;
 }
 
-.about__info-text {
+.about__info-text,
+.hotel__description-text {
     font-size: clamp(0.75rem, 0.5724rem + 0.4728vw, 0.875rem);
     line-height: 1.66667;
     font-weight: 300;
@@ -297,7 +299,8 @@ body::-webkit-scrollbar-thumb {
     border-radius: 4px;
 }
 
-.room__main,
+.room,
+.hotel,
 .booking__page__room__main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -306,22 +309,26 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: .3rem;
 }
 
-.room__image {
+.room__image,
+.hote__image {
     height: 162px;
     width: 246px;
 }
 
-.room__image-img {
+.room__image-img,
+.hotel__image-img {
     width: 100%;
     border-radius: 8px;
 }
 
 .room__info,
+.hotel__info,
 .room__price {
     padding-left: 1rem;
 }
 
 .room__info-title,
+.hotel__info-title,
 .main__explore-subtitle,
 .guest-contact__title {
     font-weight: 500;
@@ -348,13 +355,15 @@ body::-webkit-scrollbar-thumb {
     background: currentColor;
 }
 
-.room__info-subtitle {
+.room__info-subtitle,
+.hotel__info-location {
     font-weight: 700;
     font-size: clamp(0.75rem, 0.5724rem + 0.4728vw, 0.875rem);
     line-height: 20px;
 }
 
 .room__info-text,
+.hotel__location-info,
 .room__price-text {
     font-size: clamp(0.75rem, 0.5724rem + 0.4728vw, 0.875rem);
     color: #000;
@@ -448,23 +457,28 @@ body::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
 
-.room__main--margin {
+.room--margin,
+.hotel--margin {
     margin: 1rem 1rem 2rem;
 }
 
-.room__image--wide {
+.room__image--wide,
+.hotel__image--wide {
     width: auto;
     height: auto;
 }
 
 .room__info--padding,
+.hotel__info--padding,
 .room__price--padding {
     padding-top: 1rem;
 }
 
 .room__info-subtitle--white,
+.hotel__info-location--white,
 .room__info-text--white,
-.room__price-text--white {
+.room__price-text--white,
+.hotel__description-text--color-white {
     color: snow;
     font-weight: 100;
 }
@@ -629,7 +643,8 @@ body::-webkit-scrollbar-thumb {
         width: auto;
     }
 
-    .about__info {
+    .about__info,
+    .hotel__description {
         padding-bottom: 0;
     }
 
@@ -654,7 +669,8 @@ body::-webkit-scrollbar-thumb {
         padding-top: 62px;
     }
 
-    .room__main--margin {
+    .room--margin,
+    .hotel--margin {
         margin: 1rem 0rem 1.5rem;
     }
 
@@ -737,7 +753,8 @@ body::-webkit-scrollbar-thumb {
         padding: 1rem;
     }
 
-    .about__info {
+    .about__info,
+    .hotel__description {
         padding: 0;
     }
 
@@ -758,7 +775,8 @@ body::-webkit-scrollbar-thumb {
         height: auto;
     }
 
-    .room__main {
+    .room,
+    .hotel {
         grid-template-columns: repeat(1, 1fr);
         margin: 1rem 1rem 1.5rem;
     }
@@ -769,7 +787,13 @@ body::-webkit-scrollbar-thumb {
         grid-column: 1/3;
     }
 
-    .room__info {
+    .room__image--wide,
+    .hotel__image--wide {
+        grid-column: auto;
+    }
+
+    .room__info,
+    .hotel__info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 0 0 0.8rem 0;
@@ -810,7 +834,8 @@ body::-webkit-scrollbar-thumb {
         padding-top: 40px;
     }
 
-    .room__main--margin {
+    .room--margin,
+    .hotel--margin {
         margin: 1rem 0rem 1.5rem;
     }
 
